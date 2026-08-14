@@ -20,7 +20,7 @@ h1,h2,h3,h4{font-family:var(--hf);line-height:1.2;color:var(--navy)}
 a{text-decoration:none;color:inherit}
 
 /* NAV */
-.nav{position:fixed;top:0;left:0;right:0;z-index:1000;background:rgba(255,255,255,.98);backdrop-filter:blur(8px);border-bottom:1px solid rgba(27,120,120,.12);padding:0 2rem;height:68px;display:flex;align-items:center;justify-content:center;gap:1.5rem;transition:box-shadow .3s}
+.nav{position:fixed;top:0;left:0;right:0;z-index:1000;background:rgba(255,255,255,.98);backdrop-filter:blur(8px);border-bottom:1px solid rgba(27,120,120,.12);padding:0 2rem;height:68px;display:flex;align-items:center;justify-content:center;gap:3rem;transition:box-shadow .3s}
 .nav.s{box-shadow:0 2px 24px rgba(27,120,120,.15)}
 .nav-logo{display:flex;align-items:center;gap:10px}
 .nav-logo img{height:50px;width:50px;border-radius:6px;object-fit:cover}
@@ -33,7 +33,7 @@ a{text-decoration:none;color:inherit}
 .nav-cta{background:var(--amber)!important;color:var(--navy)!important;padding:8px 18px!important;border-radius:4px;font-weight:700!important;transition:background .2s!important}
 .nav-cta:hover{background:var(--amber-dark)!important}
 .hamburger{display:none;flex-direction:column;gap:5px;cursor:pointer;padding:4px}
-.hamburger span{display:block;width:24px;height:2px;background:var(--navy);transition:all .3s}
+.hamburger span{display:block;width:22px;height:2px;background:var(--teal);transition:all .3s}
 
 /* PAGE */
 .page-body{padding-top:68px;background:#ffffff;min-height:calc(100vh - 68px)}
@@ -178,14 +178,14 @@ a{text-decoration:none;color:inherit}
 
 <nav class="nav" id="nav">
   <a href="index.html" class="nav-logo">
-    <img src="assets/logo.jpg" alt="V3 Life Care Exim logo"/>
+    <img src="assets/logo.jpg" alt="V3 Life Care Exim"/>
   </a>
   <ul class="nav-links" id="navLinks">
     <li><a href="index.html">Home</a></li>
     <li><a href="about.html">About</a></li>
     <li><a href="products.html">Products</a></li>
     <li><a href="regulatory-services.html">Regulatory Services</a></li>
-    <li><a href="contact.html" class="active">Contact</a></li>
+    <li><a href="contact.html">Contact</a></li>
   </ul>
   <div class="hamburger" id="hamburger" onclick="toggleMenu()">
     <span></span><span></span><span></span>
