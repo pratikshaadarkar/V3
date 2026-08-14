@@ -1,0 +1,17 @@
+# Backup and temp files
+*.backup
+*.backup2
+*.backup3
+*.temp
+
+# Old renamed page files (replaced by correct filenames)
+contact-page.html
+home-page.html*
+
+# Raw design assets / screenshots (not needed on the server)
+ChatGPT Image*.png
+Jul *.png
+Ointment.png
+Respules.png
+Syrup.png
+Tablets.png

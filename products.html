@@ -206,10 +206,10 @@ img{max-width:100%;height:auto;display:block}
   </a>
   <ul class="nav-links" id="navLinks">
     <li><a href="index.html">Home</a></li>
-    <li><a href="about-page.html">About</a></li>
+    <li><a href="about.html">About</a></li>
     <li><a href="products.html">Products</a></li>
-    <li><a href="regulatory-services-page.html">Regulatory Services</a></li>
-    <li><a href="contact-page.html">Contact</a></li>
+    <li><a href="regulatory-services.html">Regulatory Services</a></li>
+    <li><a href="contact.html">Contact</a></li>
   </ul>
   <div class="hamburger" id="hamburger" onclick="toggleMenu()">
     <span></span><span></span><span></span>
@@ -453,6 +453,171 @@ function filterProducts(q){
   if(nr)nr.style.display=(vis===0&&term)?'block':'none';
 }
 </script>
+
+<style>
+/* ── MOBILE RESPONSIVE FIXES ── */
+
+/* 1. Hero / Export Catalogue: fix margin-left:300px pushing content off screen */
+@media (max-width: 900px) {
+  .hero-products-inner {
+    margin-left: 0 !important;
+    max-width: 100% !important;
+    width: 100% !important;
+  }
+  .hero-products {
+    padding: 6rem 1.25rem 2.5rem !important;
+    min-height: auto !important;
+    align-items: flex-start !important;
+  }
+  .hero-products h1 {
+    font-size: clamp(1.75rem, 6vw, 2.4rem) !important;
+  }
+  .hero-sub {
+    font-size: 0.92rem !important;
+    line-height: 1.6 !important;
+    max-width: 100% !important;
+  }
+
+  /* 2. Products section padding */
+  .products-section {
+    padding: 0 1rem 3rem !important;
+    gap: 1rem !important;
+    width: 100% !important;
+    min-width: 0 !important;
+  }
+
+  /* 3. Sidebar tabs: two-column grid on tablet/mobile */
+  .sidebar {
+    display: grid !important;
+    grid-template-columns: 1fr 1fr !important;
+    gap: 0.4rem !important;
+    width: 100% !important;
+  }
+  .sidebar-heading {
+    grid-column: 1 / -1 !important;
+    width: 100% !important;
+  }
+  .tab-btn {
+    width: 100% !important;
+    flex: none !important;
+    padding: 0.65rem 0.75rem !important;
+    justify-content: flex-start !important;
+  }
+
+  /* 4. Panel header: keep single row but allow wrapping */
+  .panel-header {
+    margin-bottom: 1rem !important;
+  }
+
+  /* 5. Search bar */
+  .search-wrap input {
+    box-sizing: border-box !important;
+    width: 100% !important;
+    font-size: 16px !important;
+  }
+
+  /* 6. Table cells: reduce padding, allow name wrapping */
+  .sr-no {
+    padding: 10px 8px !important;
+    min-width: 36px !important;
+    width: 44px !important;
+  }
+  .th-sr { width: 44px !important; }
+  .prod-name {
+    padding: 10px 10px !important;
+    word-break: break-word !important;
+    white-space: normal !important;
+    min-width: 0 !important;
+  }
+  .prod-packing {
+    padding: 10px 10px !important;
+    white-space: normal !important;
+    word-break: break-word !important;
+  }
+  .prod-table th {
+    padding: 10px 8px !important;
+    font-size: 0.72rem !important;
+  }
+
+  /* 7. Contact CTA: stack icon+text above button */
+  .contact-cta {
+    padding: 1.5rem 1rem !important;
+  }
+  .contact-cta-inner {
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    gap: 1.25rem !important;
+    padding: 1.5rem !important;
+    justify-content: flex-start !important;
+  }
+  .contact-cta-left {
+    flex-direction: row !important;
+    align-items: flex-start !important;
+    gap: 1rem !important;
+    width: 100% !important;
+    flex: none !important;
+  }
+  .contact-cta-btns {
+    width: 100% !important;
+    flex-shrink: 1 !important;
+  }
+  .cta-primary {
+    width: 100% !important;
+    justify-content: center !important;
+    font-size: 0.9rem !important;
+    padding: 12px 20px !important;
+    box-sizing: border-box !important;
+  }
+
+  /* 8. Footer: full width, no overflow */
+  .footer {
+    padding: 3rem 1.25rem 2rem !important;
+    width: 100% !important;
+    box-sizing: border-box !important;
+  }
+  .footer-grid {
+    max-width: 100% !important;
+  }
+  .footer-bottom {
+    max-width: 100% !important;
+  }
+}
+
+/* Narrow phones (≤480px): single-column tabs, tighter spacing */
+@media (max-width: 480px) {
+  .sidebar {
+    grid-template-columns: 1fr !important;
+  }
+  .hero-products {
+    padding: 5.5rem 1rem 2rem !important;
+  }
+  .hero-products h1 {
+    font-size: 1.6rem !important;
+  }
+  .products-section {
+    padding: 0 0.75rem 2.5rem !important;
+  }
+  .contact-cta {
+    padding: 1.25rem 0.75rem !important;
+  }
+  .contact-cta-inner {
+    padding: 1.25rem !important;
+    border-radius: 12px !important;
+  }
+  .footer {
+    padding: 2.5rem 1rem 1.5rem !important;
+  }
+  .enquiry-row {
+    padding: 1rem !important;
+    flex-direction: column !important;
+    align-items: flex-start !important;
+  }
+  .btn-enquiry {
+    width: 100% !important;
+  }
+}
+</style>
+
 </body>
 </html>
 <html lang="en">
@@ -642,10 +807,10 @@ img{max-width:100%;height:auto;display:block}
   </a>
   <ul class="nav-links" id="navLinks">
     <li><a href="index.html">Home</a></li>
-    <li><a href="about-page.html">About</a></li>
+    <li><a href="about.html">About</a></li>
     <li><a href="products.html">Products</a></li>
-    <li><a href="regulatory-services-page.html">Regulatory Services</a></li>
-    <li><a href="contact-page.html">Contact</a></li>
+    <li><a href="regulatory-services.html">Regulatory Services</a></li>
+    <li><a href="contact.html">Contact</a></li>
   </ul>
   <div class="hamburger" id="hamburger" onclick="toggleMenu()">
     <span></span><span></span><span></span>
@@ -751,10 +916,10 @@ document.addEventListener('DOMContentLoaded', function() {
       <h4>Quick Links</h4>
       <ul>
         <li><a href="index.html">Home</a></li>
-        <li><a href="about-page.html">About Us</a></li>
+        <li><a href="about.html">About Us</a></li>
         <li><a href="products.html">Products</a></li>
-        <li><a href="regulatory-services-page.html">Regulatory Services</a></li>
-        <li><a href="contact-page.html">Contact Us</a></li>
+        <li><a href="regulatory-services.html">Regulatory Services</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
         <li><a href="privacy-policy.html">Privacy Policy</a></li>
       </ul>
     </div>

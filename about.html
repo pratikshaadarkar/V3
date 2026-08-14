@@ -1,0 +1,1218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Us — V3 Life Care Exim | Pharmaceutical Exporter India</title>
+  <meta name="description" content="V3 Life Care Exim is Mumbai's regulatory-first pharmaceutical merchant exporter. 15+ years regulatory expertise. WHO-GMP certified manufacturers. Learn our story." />
+  <style>
+:root{
+  --navy:#0B3030;--navy-mid:#0E3A3A;--navy-light:#134444;
+  --teal:#1B7878;--teal-dark:#145858;--teal-light:rgba(27,120,120,0.10);
+  --amber:#FFC067;--amber-dark:#F0A040;
+  --white:#FFFFFF;--off-white:#F4FAFA;--pale:#EBF5F5;
+  --lgrey:#D8ECEC;--mgrey:#6B9E9E;--dgrey:#2E5E5E;--text:#1F3A3A;
+  --hf:'Georgia',serif;--bf:system-ui,-apple-system,'Segoe UI',sans-serif;
+}
+html,body{margin:0;padding:0;width:100%}
+html{scroll-behavior:smooth}
+body{font-family:var(--bf);color:var(--text);background:var(--white);line-height:1.6;font-size:16px;overflow-x:hidden}
+h1,h2,h3,h4{font-family:var(--hf);line-height:1.2;color:var(--navy)}
+a{text-decoration:none;color:inherit}
+
+/* NAV */
+.nav{position:fixed;top:0;left:0;right:0;z-index:1000;background:rgba(255,255,255,.98);backdrop-filter:blur(8px);border-bottom:1px solid rgba(27,120,120,.12);padding:0 2rem;height:68px;display:flex;align-items:center;justify-content:center;gap:3rem;transition:box-shadow .3s}
+.nav.s{box-shadow:0 2px 24px rgba(27,120,120,.15)}
+.nav-logo{display:flex;align-items:center;gap:10px}
+.nav-logo img{height:50px;width:50px;border-radius:6px;object-fit:cover}
+.nav-logo-text{font-family:var(--hf);font-size:.95rem;font-weight:600;color:var(--navy);line-height:1.2}
+.nav-logo-text small{display:block;font-family:var(--bf);font-size:.62rem;font-weight:400;color:var(--teal);letter-spacing:.06em;text-transform:uppercase}
+.nav-links{display:flex;align-items:center;gap:1.75rem;list-style:none;margin-right:3rem}
+.nav-links a{font-size:.95rem;font-weight:700;color:var(--teal-dark);letter-spacing:.04em;text-transform:none;transition:color .2s}
+.nav-links a:hover{color:var(--teal)}
+.nav-cta{background:var(--amber)!important;color:var(--navy)!important;padding:8px 18px!important;border-radius:4px;font-weight:700!important;transition:background .2s!important}
+.nav-cta:hover{background:var(--amber-dark)!important}
+.hamburger{display:none;flex-direction:column;gap:5px;cursor:pointer;padding:4px}
+.hamburger span{display:block;width:24px;height:2px;background:var(--navy);transition:all .3s}
+
+/* DROPDOWN MENU */
+.nav-links .dropdown{position:relative}
+.nav-links .dropdown-menu{display:grid;grid-template-columns:repeat(4,1fr);gap:1.5rem;position:absolute;top:100%;left:-220%;transform:translateX(-50%) translateY(-12px);width:900px;max-width:95vw;background:#FFFFFF;border:1px solid #D8ECEC;border-radius:8px;padding:2.5rem 2rem 2rem;padding-top:3rem;box-shadow:0 8px 24px rgba(0,0,0,0.12);z-index:1001;opacity:0;visibility:hidden;pointer-events:none;transition:opacity 0.4s ease,transform 0.4s ease,visibility 0.4s;margin-top:20px}
+.nav-links .dropdown-menu::before{content:'';position:absolute;top:-20px;left:0;right:0;height:20px}
+.nav-links .dropdown:hover .dropdown-menu{opacity:1;visibility:visible;pointer-events:all;transform:translateX(-50%) translateY(0)}
+.dropdown-column{display:flex;flex-direction:column}
+.dropdown-category{display:block;font-weight:600;color:#1F3A3A;padding:1rem;cursor:pointer;transition:background .2s;border-bottom:none;font-size:0.95rem;text-decoration:none}
+.dropdown-category:last-child{border-bottom:none;margin-bottom:0}
+.dropdown-category:hover{background:#F4FAFA;color:#1F3A3A;font-weight:700}
+/* DROPDOWN MENU */
+.nav-links .dropdown{position:relative}
+.nav-links .dropdown-menu{display:grid;grid-template-columns:repeat(4,1fr);gap:1.5rem;position:absolute;top:100%;left:-220%;transform:translateX(-50%) translateY(-12px);width:900px;max-width:95vw;background:#FFFFFF;border:1px solid #D8ECEC;border-radius:8px;padding:2.5rem 2rem 2rem;padding-top:3rem;box-shadow:0 8px 24px rgba(0,0,0,0.12);z-index:1001;opacity:0;visibility:hidden;pointer-events:none;transition:opacity 0.4s ease,transform 0.4s ease,visibility 0.4s;margin-top:20px}
+.nav-links .dropdown-menu::before{content:'';position:absolute;top:-20px;left:0;right:0;height:20px}
+.nav-links .dropdown:hover .dropdown-menu{opacity:1;visibility:visible;pointer-events:all;transform:translateX(-50%) translateY(0)}
+.dropdown-column{display:flex;flex-direction:column}
+.dropdown-category{display:block;font-weight:600;color:#1F3A3A;padding:1rem;cursor:pointer;transition:background .2s;border-bottom:none;font-size:0.95rem;text-decoration:none}
+.dropdown-category:last-child{border-bottom:none;margin-bottom:0}
+.dropdown-category:hover{background:#F4FAFA;color:#1F3A3A;font-weight:700}
+
+
+/* FOOTER */
+.footer{background:#449190;padding:4.5rem 2rem 2rem;border-top:1px solid rgba(255,255,255,.06)}
+.footer-grid{max-width:1100px;margin:0 auto;display:grid;grid-template-columns:1.8fr 1.3fr 1.4fr;gap:3rem;padding-bottom:3rem;text-align:left;}
+.f-logo{display:flex;align-items:center;gap:10px;margin-bottom:1rem}
+.f-logo img{height:58px;width:58px;border-radius:5px;object-fit:cover}
+.f-logo-t{font-family:var(--hf);font-size:.9rem;font-weight:600;color:#FFFFFF}
+.f-tagline{font-size:.92rem;color:#FFFFFF;line-height:1.75;margin-bottom:1rem}
+.f-col h4{font-size:.9rem;font-weight:700;letter-spacing:.07em;text-transform:uppercase;margin-bottom:1.25rem;color:#FFFFFF}
+.f-col ul{list-style:none;padding:0;margin:0}
+.f-col ul li{margin-bottom:.7rem}
+.f-col a{font-size:.95rem;color:#FFFFFF;transition:color .2s}
+.f-col a:hover{color:var(--amber)}.f-ci a:hover{color:var(--amber)}
+.f-ci{display:flex;align-items:center;gap:.75rem;margin-bottom:.9rem;font-size:.92rem;color:#FFFFFF}
+.f-ci svg{width:18px;height:18px;flex-shrink:0;stroke:#FFFFFF;fill:none;stroke-width:1.5}
+.footer-bottom{max-width:1100px;margin:0 auto;padding-top:1.5rem;text-align:center;font-size:.9rem;color:#FFFFFF}
+/* MODAL */
+.modal-overlay{display:none;position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.5);z-index:2000;justify-content:center;align-items:center}
+.modal-overlay.active{display:flex}
+.modal-box{background:#fff;border-radius:8px;padding:2.5rem;width:90%;max-width:600px;position:relative;box-shadow:0 20px 60px rgba(0,0,0,0.3)}
+.modal-close{position:absolute;top:1.5rem;right:1.5rem;background:none;border:none;font-size:1.5rem;color:#333;cursor:pointer;width:40px;height:40px;display:flex;align-items:center;justify-content:center;z-index:9999;pointer-events:auto;padding:0}
+.modal-close:hover{opacity:0.8}
+.modal-title{color:var(--teal);font-size:1.5rem;margin-bottom:1.5rem;font-weight:700}
+.modal-form{display:grid;gap:0.3rem}
+.form-row{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
+.modal-form .form-group{display:flex;flex-direction:column}
+.modal-form .form-group label{color:#111;font-size:0.9rem;margin-bottom:0.5rem;font-weight:600}
+.modal-form .form-group input,.modal-form .form-group textarea{background:#f9f9f9;border:1px solid #ddd;border-radius:4px;padding:0.75rem;font-size:0.95rem;font-family:inherit;color:#111}
+.modal-form .form-group input::placeholder,.modal-form .form-group textarea::placeholder{color:#999}
+.modal-form .form-group textarea{min-height:120px;resize:vertical}
+.modal-form .form-group.full{grid-column:1/-1}
+.modal-button{background:var(--teal);color:#fff;border:none;padding:0.75rem 1.5rem;border-radius:4px;font-weight:700;font-size:0.95rem;cursor:pointer;transition:background 0.2s;width:100%}
+.modal-button:hover{background:var(--teal-dark)}
+
+/* FADE-IN */
+.fade-in{opacity:0;transform:translateY(30px);transition:opacity 0.8s ease-out,transform 0.8s ease-out}
+.fade-in.visible{opacity:1;transform:translateY(0)}
+
+
+.f-col p{font-size:.9rem;color:#FFFFFF;line-height:1.7}
+.f-col ul li a{font-size:.9rem;color:#FFFFFF;transition:color .2s}
+.f-col ul li a:hover{color:var(--amber)}
+.f-ci a{color:#FFFFFF;transition:color .2s}
+.f-ci a:hover{color:var(--amber)}
+@media(max-width:900px){
+  .nav-links{display:none;position:fixed;top:68px;left:0;right:0;background:rgba(255,255,255,.99);padding:1.5rem 2rem;flex-direction:column;gap:1rem;border-bottom:1px solid rgba(27,120,120,.12);z-index:999}
+  .nav-links.open{display:flex}
+  .hamburger{display:flex}
+  .footer-grid{grid-template-columns:1fr;gap:2rem}
+}
+
+/* ── ABOUT PAGE SECTIONS ── */
+/* ─── HERO ─────────────────────────────────────────────── */
+    .hero {
+      position: relative;
+      height: 520px;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      align-items: center;
+      overflow: hidden;
+      width: 100vw;
+      left: 50%;
+      right: 50%;
+      margin-left: -50vw;
+      margin-right: -50vw;
+    }
+
+    .hero-img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center center;
+    }
+
+    .hero-overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(
+        105deg,
+        rgba(11,45,50,0.88) 0%,
+        rgba(11,45,50,0.60) 55%,
+        rgba(11,45,50,0.30) 100%
+      );
+    }
+
+    .hero-content {
+      position: absolute;
+      z-index: 2;
+      left: 8rem;
+      right: 4rem;
+      top: 50%;
+      transform: translateY(-50%);
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    .hero h1 {
+      font-family: Georgia, 'Times New Roman', serif;
+      font-size: clamp(1.8rem, 3.5vw, 3rem);
+      font-weight: 700;
+      color: #ffffff;
+      line-height: 1.2;
+      margin: 0 0 -10px 0;
+      letter-spacing: -0.01em;
+      text-shadow: 0 2px 16px rgba(0,0,0,0.5);
+      white-space: normal;
+    }
+
+    .hero-sub {
+      font-size: 1.35rem;
+      font-weight: 400;
+      color: rgba(255,255,255,0.92);
+      line-height: 1.5;
+      letter-spacing: 0.01em;
+      text-shadow: 0 1px 8px rgba(0,0,0,0.4);
+      white-space: normal;
+    }
+
+    .hero-divider {
+      width: 48px;
+      height: 3px;
+      background: var(--accent-red);
+      margin-bottom: 20px;
+    }
+
+    /* ─── STATS STRIP ─────────────────────────────────────── */
+    .stats-strip {
+      background: var(--dark-strip);
+    }
+
+    .stats-inner {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+    }
+
+    .stat-item {
+      padding: 32px 24px;
+      text-align: center;
+    }
+
+    .stat-item:last-child { border-right: none; }
+
+    .stat-num {
+      font-family: Georgia, 'Times New Roman', serif;
+      font-size: 2.5rem;
+      font-weight: 400;
+      color: #fff;
+      font-variant-numeric: tabular-nums;
+      line-height: 1;
+      margin-bottom: 8px;
+    }
+
+    .stat-label {
+      font-size: 0.75rem;
+      letter-spacing: 0.02em;
+      color: rgba(255,255,255,0.52);
+      font-weight: 500;
+    }
+
+    /* ─── ABOUT SECTION ───────────────────────────────────── */
+    .about-section {
+      padding: 96px 0;
+      background: var(--bg);
+    }
+
+    .about-inner {
+      max-width: 1400px;
+      margin: 0 auto;
+      padding: 0 48px;
+      display: grid;
+      grid-template-columns: 0.85fr 1.15fr;
+      gap: 60px;
+      align-items: center;
+    }
+
+    .about-visual {
+      position: relative;
+      border-radius: 0;
+      overflow: hidden;
+    }
+
+    .about-visual img {
+      width: 100%;
+      aspect-ratio: 16 / 9;
+      min-height: 420px;
+      object-fit: cover;
+      border-radius: 0;
+    }
+
+    .about-visual-accent {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 4px;
+      background: linear-gradient(90deg, var(--accent-red), var(--accent-amber));
+    }
+
+    .section-eyebrow {
+      font-size: 0.72rem;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: var(--accent-amber);
+      font-weight: 600;
+      margin-bottom: 14px;
+    }
+
+    .red-border-wrap {
+      display: flex;
+      align-items: flex-start;
+      gap: 20px;
+      width: 100%;
+    }
+
+    .red-rule {
+      width: 4px;
+      min-height: 100%;
+      background: var(--accent-red);
+      border-radius: 2px;
+      flex-shrink: 0;
+      align-self: stretch;
+    }
+
+    .about-text-block { flex: 1; min-width: 0; width: 100%; }
+
+    .about-text-block h2 {
+      font-family: Georgia, 'Times New Roman', serif;
+      font-size: clamp(1.6rem, 2.5vw, 2.1rem);
+      font-weight: 400;
+      color: var(--text-primary);
+      line-height: 1.28;
+      text-wrap: balance;
+      margin-bottom: 24px;
+    }
+
+    .about-text-block p {
+      color: var(--text-body);
+      font-size: 1rem;
+      line-height: 1.75;
+      margin-bottom: 18px;
+      max-width: 100%;
+    }
+
+    .credential-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 28px;
+    }
+
+    .credential-chip {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 6px 14px;
+      border: 1px solid var(--border);
+      border-radius: 3px;
+      font-size: 0.78rem;
+      letter-spacing: 0.04em;
+      color: var(--text-muted);
+      background: var(--surface);
+    }
+
+    .credential-chip::before {
+      content: '';
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: var(--accent-red);
+      flex-shrink: 0;
+    }
+
+    /* ─── QUALITY SECTION ─────────────────────────────────── */
+    .quality-section {
+      position: relative;
+      overflow: hidden;
+      min-height: 320px;
+      display: flex;
+      align-items: center;
+    }
+
+    .quality-bg {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center 40%;
+    }
+
+    .quality-overlay {
+      position: absolute;
+      inset: 0;
+      background: var(--teal-overlay);
+    }
+
+    .quality-inner {
+      position: relative;
+      z-index: 2;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 72px 32px;
+      width: 100%;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    .quality-stat {
+      text-align: center;
+      padding: 16px 32px;
+      border-right: 1px solid rgba(255,255,255,0.15);
+    }
+
+    .quality-stat:last-child { border-right: none; }
+
+    .quality-label {
+      font-size: 0.68rem;
+      letter-spacing: 0.20em;
+      text-transform: uppercase;
+      color: var(--accent-amber);
+      font-weight: 700;
+      margin-bottom: 14px;
+    }
+
+    .quality-num {
+      font-family: Georgia, 'Times New Roman', serif;
+      font-size: clamp(3rem, 5vw, 4.5rem);
+      font-weight: 400;
+      color: #fff;
+      line-height: 1;
+      font-variant-numeric: tabular-nums;
+    }
+
+    /* ─── FOUNDERS SECTION ────────────────────────────────── */
+    .founders-section {
+      padding: 96px 0;
+      background: var(--bg);
+    }
+
+    .founders-inner {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 32px;
+    }
+
+    .section-header {
+      margin-bottom: 56px;
+    }
+
+    .section-header h2 {
+      font-family: Georgia, 'Times New Roman', serif;
+      font-size: clamp(1.6rem, 2.5vw, 2.1rem);
+      font-weight: 400;
+      color: var(--text-primary);
+      line-height: 1.28;
+      text-wrap: balance;
+      margin-bottom: 16px;
+    }
+
+    .section-header p {
+      color: var(--text-muted);
+      font-size: 1rem;
+      max-width: 56ch;
+    }
+
+    .founders-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 32px;
+    }
+
+    .founder-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 4px;
+      overflow: hidden;
+      box-shadow: var(--shadow);
+    }
+
+    .founder-card-top {
+      background: var(--dark-strip);
+      padding: 32px;
+      display: flex;
+      align-items: flex-start;
+      gap: 20px;
+    }
+
+    .founder-avatar-placeholder {
+      width: 72px;
+      height: 72px;
+      border-radius: 50%;
+      flex-shrink: 0;
+      background: rgba(255,255,255,0.08);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: Georgia, serif;
+      font-size: 1.5rem;
+      color: rgba(255,255,255,0.5);
+      border: 2px solid rgba(255,255,255,0.12);
+    }
+
+    .founder-meta { flex: 1; }
+
+    .founder-name {
+      font-family: Georgia, 'Times New Roman', serif;
+      font-size: 1.2rem;
+      font-weight: 400;
+      color: #fff;
+      margin-bottom: 4px;
+    }
+
+    .founder-title {
+      font-size: 0.78rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--accent-amber);
+    }
+
+    .founder-card-body {
+      padding: 28px 32px;
+    }
+
+    .founder-card-body p {
+      font-size: 0.9375rem;
+      line-height: 1.72;
+      color: var(--text-body);
+      margin-bottom: 20px;
+    }
+
+    .founder-creds {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    .founder-cred {
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      font-size: 0.84rem;
+      color: var(--text-muted);
+      line-height: 1.55;
+    }
+
+    .founder-cred::before {
+      content: '—';
+      color: var(--accent-red);
+      flex-shrink: 0;
+    }
+
+    /* ─── VALUES SECTION ──────────────────────────────────── */
+    .values-section {
+      background: var(--dark-strip);
+      padding: 88px 0;
+    }
+
+    .values-inner {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 32px;
+    }
+
+    .values-header {
+      margin-bottom: 52px;
+    }
+
+    .values-header .section-eyebrow {
+      color: var(--accent-amber);
+    }
+
+    .values-header h2 {
+      font-family: Georgia, 'Times New Roman', serif;
+      font-size: clamp(1.5rem, 2.5vw, 2rem);
+      font-weight: 400;
+      color: #fff;
+      text-wrap: balance;
+    }
+
+    .values-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1px;
+      background: rgba(255,255,255,0.08);
+      border: 1px solid rgba(255,255,255,0.08);
+    }
+
+    .value-card {
+      background: var(--dark-strip);
+      padding: 40px 32px;
+      transition: background 0.2s;
+    }
+
+    .value-card:hover {
+      background: rgba(255,255,255,0.03);
+    }
+
+    .value-accent-line {
+      width: 32px;
+      height: 2px;
+      background: var(--accent-red);
+      margin-bottom: 20px;
+    }
+
+    .value-icon {
+      width: 40px;
+      height: 40px;
+      margin-bottom: 20px;
+    }
+
+    .value-card h3 {
+      font-family: Georgia, 'Times New Roman', serif;
+      font-size: 1.1rem;
+      font-weight: 400;
+      color: #fff;
+      margin-bottom: 12px;
+    }
+
+    .value-card p {
+      font-size: 0.9rem;
+      line-height: 1.7;
+      color: rgba(255,255,255,0.52);
+    }
+
+    /* ─── CTA SECTION ─────────────────────────────────────── */
+    .cta-section {
+      padding: 88px 0;
+      background: var(--bg);
+      border-top: 1px solid var(--border);
+    }
+
+    .cta-inner {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 0 32px;
+      text-align: center;
+    }
+
+    .cta-inner h2 {
+      font-family: Georgia, 'Times New Roman', serif;
+      font-size: clamp(1.6rem, 2.5vw, 2.1rem);
+      font-weight: 400;
+      color: var(--text-primary);
+      line-height: 1.3;
+      text-wrap: balance;
+      margin-bottom: 16px;
+      margin-top: 12px;
+    }
+
+    .cta-inner p {
+      color: var(--text-muted);
+      font-size: 1rem;
+      line-height: 1.7;
+      margin-bottom: 36px;
+      max-width: 48ch;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .cta-btn {
+      display: inline-block;
+      background: var(--accent-red);
+      color: #fff;
+      text-decoration: none;
+      padding: 14px 36px;
+      border-radius: 3px;
+      font-size: 0.875rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      font-weight: 500;
+      transition: background 0.2s, transform 0.15s;
+    }
+
+    .cta-btn:hover {
+      background: #a93224;
+      transform: translateY(-1px);
+    }
+
+    .cta-btn:focus-visible {
+      outline: 3px solid var(--accent-amber);
+      outline-offset: 3px;
+    }
+
+    /* ─── FOOTER ──────────────────────────────────────────── */
+    footer {
+      background: #071C1F;
+      padding: 40px 32px;
+      text-align: center;
+    }
+
+    .footer-logo {
+      font-family: Georgia, serif;
+      font-size: 1rem;
+      color: rgba(255,255,255,0.5);
+      margin-bottom: 8px;
+    }
+
+    .footer-note {
+      font-size: 0.78rem;
+      color: rgba(255,255,255,0.28);
+      letter-spacing: 0.04em;
+    }
+
+    /* ─── RESPONSIVE ──────────────────────────────────────── */
+    @media (max-width: 900px) {
+      .nav-links { display: none; }
+
+      .stats-inner {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .stat-item:nth-child(2) { border-right: none; }
+      .stat-item:nth-child(3) { border-right: 1px solid rgba(255,255,255,0.08); }
+      .stat-item:nth-child(3),
+      .stat-item:nth-child(4) { border-top: 1px solid rgba(255,255,255,0.08); }
+
+      .about-inner {
+        grid-template-columns: 1fr;
+        gap: 48px;
+      }
+
+      .about-visual img { height: 320px; }
+
+      .quality-inner {
+        grid-template-columns: 1fr;
+      }
+
+      .quality-stat {
+        border-right: none;
+        border-bottom: 1px solid rgba(255,255,255,0.12);
+        padding: 32px 16px;
+      }
+
+      .quality-stat:last-child { border-bottom: none; }
+
+      .founders-grid { grid-template-columns: 1fr; }
+      .values-grid { grid-template-columns: 1fr; }
+    }
+
+    @media (max-width: 1100px) {
+      .hero-content { left: 4rem; right: 2rem; }
+    }
+
+    @media (max-width: 768px) {
+      .hero { height: auto; min-height: 380px; padding: 80px 0 48px; }
+      .hero-content {
+        position: relative;
+        left: auto; right: auto; top: auto;
+        transform: none;
+        padding: 0 1.5rem;
+        z-index: 2;
+      }
+      .hero h1 { font-size: clamp(1.5rem, 5vw, 2.2rem); }
+      .hero-sub { font-size: 1rem; }
+    }
+
+    @media (max-width: 600px) {
+      .hero { min-height: 320px; padding: 72px 0 40px; }
+      .hero-content { padding: 0 1.25rem; }
+      .hero h1 { font-size: clamp(1.3rem, 6vw, 1.8rem); }
+      .hero-sub { font-size: 0.95rem; }
+      .stat-num { font-size: 2rem; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after { transition: none !important; animation: none !important; }
+    }
+  
+
+/* STATS */
+.stats-bar{background:#ffffff;padding:0 2rem 4rem}
+.stats-card{position:relative;border-radius:16px;overflow:hidden;max-width:1100px;margin:0 auto;box-shadow:0 12px 48px rgba(0,0,0,0.12)}
+.stats-bg-img{width:100%;display:block;object-fit:cover;height:340px}
+.stats-overlay{position:absolute;inset:0;background:linear-gradient(to right,rgba(11,48,48,0.88) 0%,rgba(11,48,48,0.78) 50%,rgba(27,120,120,0.68) 100%);opacity:0.95}
+.stats-bar-inner{position:absolute;inset:0;padding:0 6%;max-width:100%;display:flex;align-items:center;justify-content:center;color:#fff;z-index:1;grid-template-columns:repeat(3,1fr);gap:3rem;text-align:center}
+.stat-item{display:flex;flex-direction:column;align-items:center;gap:1rem}
+.stat-label{font-size:1.2rem;font-weight:700;letter-spacing:.02em;color:var(--amber)}
+.stat-number{font-family:var(--hf);font-size:3.5rem;font-weight:700;color:#fff;line-height:1}
+.stats-bar-inner{grid-template-columns:repeat(2,1fr);gap:2rem}
+.stats-bar{padding:3rem 1rem}
+.stat-number{font-size:3.5rem}
+
+/* ── CARDS SECTION ── */
+.cards-section {
+  position: relative;
+  padding: 100px 0 130px;
+  background: #ffffff;
+  overflow: visible;
+  margin-bottom: 0;
+  z-index: 2;
+}
+.cards-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 600px;
+  object-fit: cover;
+  object-position: center 30%;
+}
+.cards-bg-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 600px;
+  background: rgba(255,255,255,0.12);
+}
+
+.cards-intro {
+  position: relative;
+  z-index: 10;
+  max-width: 1200px;
+  margin: 0 auto 56px;
+  padding: 0 40px 0;
+  margin-top: -16px;
+}
+.cards-intro-heading {
+  font-family: Georgia, serif;
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--amber);
+  margin: 0 0 8px;
+  line-height: 1.2;
+}
+.cards-intro-sub {
+  font-size: 1rem;
+  color: rgba(255,255,255,0.78);
+  margin: 0;
+  font-weight: 400;
+}
+
+.cards-inner {
+  position: relative;
+  z-index: 10;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 40px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+  align-items: start;
+}
+
+.cards-stats-row {
+  position: relative;
+  z-index: 10;
+  max-width: 1200px;
+  margin: 0 auto 48px;
+  padding: 0 40px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+  text-align: center;
+}
+.cards-stat-label {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--amber);
+  letter-spacing: 0.02em;
+  margin-bottom: 8px;
+}
+.cards-stat-number {
+  font-family: Georgia, serif;
+  font-size: 3.2rem;
+  font-weight: 700;
+  color: #ffffff;
+  line-height: 1;
+  text-shadow: 0 2px 12px rgba(0,0,0,0.3);
+  margin-bottom: 10px;
+}
+
+.info-card {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 36px 32px 32px;
+  box-shadow: 0 16px 48px rgba(0,0,0,0.22), 0 4px 12px rgba(0,0,0,0.10);
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  min-height: 320px;
+}
+.info-card-icon {
+  width: 72px;
+  height: 72px;
+  background: transparent;
+  border-radius: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  flex-shrink: 0;
+}
+.info-card-icon svg {
+  width: 26px;
+  height: 26px;
+}
+.info-card h3 {
+  font-family: system-ui, -apple-system, sans-serif;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #1F3A3A;
+  margin-bottom: 14px;
+  line-height: 1.3;
+}
+.info-card p {
+  font-size: 1rem;
+  color: #4a6666;
+  line-height: 1.72;
+  margin-bottom: 20px;
+  max-height: 112px;
+  overflow: hidden;
+  transition: max-height 0.55s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.info-card p.expanded {
+  max-height: 600px;
+}
+.info-card-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  border: 1.5px solid var(--teal);
+  color: var(--teal);
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 10px 22px;
+  border-radius: 30px;
+  text-decoration: none;
+  width: fit-content;
+  background: transparent;
+  cursor: pointer;
+  margin-top: auto;
+  transition: background 0.2s, color 0.2s;
+}
+.info-card-btn:hover {
+  background: var(--teal);
+  color: #fff;
+}
+@media(max-width:900px) {
+  .cards-inner { grid-template-columns: 1fr; gap: 20px; }
+}
+
+.nav-links a.active{border-bottom:2px solid var(--teal);padding-bottom:2px}
+</style>
+<nav class="nav" id="nav">
+  <a href="#hero" class="nav-logo">
+    <img src="assets/logo.jpg" alt="V3 Life Care Exim"/>
+  </a>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="products.html">Products</a></li>
+    <li><a href="regulatory-services.html">Regulatory Services</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+  <div class="hamburger" id="hamburger" onclick="toggleMenu()">
+    <span></span><span></span><span></span>
+  </div>
+</nav>
+
+  <!-- NAV -->
+
+  <!-- HERO -->
+  <section class="hero" aria-labelledby="hero-heading">
+    <img
+      class="hero-img"
+      src="assets/about-hero.jpg"
+      alt="Pharmaceutical manufacturing facility with automated vial filling"
+      loading="eager"
+    />
+    <div class="hero-overlay" aria-hidden="true"></div>
+    <div class="hero-content">
+      <h1 id="hero-heading">Your Trusted Pharmaceutical Export Partner</h1>
+      <p class="hero-sub">Built on regulatory expertise and trusted manufacturing partnerships.</p>
+    </div>
+  </section>
+
+
+  <!-- ABOUT SECTION -->
+  <section class="about-section" aria-labelledby="about-heading">
+    <div class="about-inner">
+      <div class="about-visual fade-in">
+        <img
+          src="assets/about-photo.jpg"
+          alt="Pharmaceutical products"
+          loading="lazy"
+        />
+        <div class="about-visual-accent" aria-hidden="true"></div>
+      </div>
+
+      <div>
+        <div class="red-border-wrap">
+          <div class="red-rule" aria-hidden="true"></div>
+          <div class="about-text-block fade-in">
+            <h2 id="about-heading" style="font-weight:800;">About V3 Life Care Exim</h2>
+            <p>V3 Life Care Exim is a pharmaceutical merchant exporter engaged in sourcing and supplying a wide range of pharmaceutical products through a verified network of qualified manufacturing partners. As a pharmaceutical sourcing and export company, we are committed to delivering quality pharmaceutical products backed by in-house regulatory expertise and a manufacturing network built through direct professional relationships.</p>
+            <p>We believe in building long-term business relationships by treating every customer with honesty, professionalism, and respect. With a customer-focused approach and strong regulatory expertise, we strive to make pharmaceutical sourcing simple, transparent, and reliable for every buyer.</p>
+            <p>Based in Mumbai, India, we make available Tablets, Capsules, Dry Syrups, Pharmaceutical Syrups, Injectables, Ointments, Eye Drops, Nasal Drops, Herbal Products, Nutraceuticals, APIs, Dermal Patches, Transdermal Patches, and many more, all supported by complete regulatory documentation and professional export coordination.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- QUALITY SECTION -->
+
+  <!-- FOOTER -->
+
+  <!-- QUALITY / VISION / MISSION CARDS -->
+  <section class="cards-section">
+    <img
+      class="cards-bg"
+      src="assets/about-cards-bg.jpg"
+      alt="Sky and pharmaceutical building background"
+      loading="lazy"
+    />
+    <div class="cards-bg-overlay"></div>
+    <div class="cards-intro fade-in">
+      <h2 class="cards-intro-heading">Delivering trusted pharmaceutical sourcing from India</h2>
+      <p class="cards-intro-sub">Connecting global buyers with verified Indian manufacturers.</p>
+    </div>
+        <div class="cards-stats-row fade-in">
+      <div class="cards-stat">
+        <div class="cards-stat-number">15+</div>
+        <div class="cards-stat-label">Years of Regulatory Experience</div>
+      </div>
+      <div class="cards-stat">
+        <div class="cards-stat-number">100%</div>
+        <div class="cards-stat-label">Safety Assured</div>
+      </div>
+      <div class="cards-stat">
+        <div class="cards-stat-number">6+</div>
+        <div class="cards-stat-label">Export Markets Served</div>
+      </div>
+    </div>
+    <div class="cards-inner">
+
+      <!-- Quality Control -->
+      <div class="info-card fade-in">
+        <div class="info-card-icon">
+          <img src="assets/about-icon-quality.png" alt="Quality Control" style="width:100%;height:100%;object-fit:contain;"/>
+        </div>
+        <h3>Quality Control</h3>
+        <p>Every product sourced through V3 is manufactured by WHO-GMP Certified, PICs Certified, EU Certified, UK MHRA Certified and Highly Vigilant Certified manufacturers. Our export review covers stages of testing: raw material, manufacturing validation, finished product testing, packaging compliance, and regulatory documentation, all completed before any shipment is released.</p>
+        <button class="info-card-btn" onclick="toggleCard(this)">READ MORE <svg width="13" height="13" viewBox="0 0 13 13" fill="none"><path d="M2 11L11 2M11 2H4M11 2V9" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+      </div>
+
+      <!-- Our Vision -->
+      <div class="info-card fade-in">
+        <div class="info-card-icon">
+          <img src="assets/about-icon-vision.png" alt="Our Vision" style="width:100%;height:100%;object-fit:contain;"/>
+        </div>
+        <h3>Our Vision</h3>
+        <p>To be a recognised pharmaceutical merchant exporter from India that international buyers across regulated markets rely on for verified sourcing, regulatory expertise, and dependable export partnerships.</p>
+        <button class="info-card-btn" onclick="toggleCard(this)">READ MORE <svg width="13" height="13" viewBox="0 0 13 13" fill="none"><path d="M2 11L11 2M11 2H4M11 2V9" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+      </div>
+
+      <!-- Our Mission -->
+      <div class="info-card fade-in">
+        <div class="info-card-icon">
+          <img src="assets/about-icon-mission.png" alt="Our Mission" style="width:100%;height:100%;object-fit:contain;"/>
+        </div>
+        <h3>Our Mission</h3>
+        <p>Our mission is to simplify pharmaceutical sourcing for international buyers. We connect buyers with verified Indian manufacturers, backed by in-house regulatory expertise and complete documentation, making every inquiry straightforward, accurate, and export-ready.</p>
+        <button class="info-card-btn" onclick="toggleCard(this)">READ MORE <svg width="13" height="13" viewBox="0 0 13 13" fill="none"><path d="M2 11L11 2M11 2H4M11 2V9" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+      </div>
+
+    </div>
+  </section>
+
+
+<script>
+window.addEventListener('scroll',function(){
+  document.getElementById('nav').classList.toggle('s',window.scrollY>20);
+});
+</script>
+
+<script>
+function toggleCard(btn) {
+  var p = btn.previousElementSibling;
+  var expanded = p.classList.contains('expanded');
+  var arrowMore = '<svg width="13" height="13" viewBox="0 0 13 13" fill="none"><path d="M2 11L11 2M11 2H4M11 2V9" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>';
+  var arrowLess = '<svg width="13" height="13" viewBox="0 0 13 13" fill="none"><path d="M11 2L2 11M2 11H9M2 11V4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>';
+  if (expanded) {
+    p.classList.remove('expanded');
+    btn.innerHTML = 'READ MORE ' + arrowMore;
+    btn.style.marginTop = '';
+  } else {
+    p.classList.add('expanded');
+    btn.innerHTML = 'READ LESS ' + arrowLess;
+  }
+}
+</script>
+
+<script>
+/* Hero parallax */
+const heroImg = document.querySelector('.hero-img');
+if (heroImg) {
+  window.addEventListener('scroll', function() {
+    heroImg.style.transform = 'translateY(' + (window.scrollY * 0.35) + 'px)';
+  }, { passive: true });
+}
+
+/* Fade-in on scroll */
+const fadeObserver = new IntersectionObserver(function(entries) {
+  entries.forEach(function(e) {
+    if (e.isIntersecting) {
+      e.target.classList.add('visible');
+      fadeObserver.unobserve(e.target);
+    }
+  });
+}, { threshold: 0.12 });
+document.querySelectorAll('.fade-in').forEach(function(el) {
+  fadeObserver.observe(el);
+});
+</script>
+
+<script>
+function toggleMenu(){
+  const l=document.getElementById('navLinks');
+  const h=document.getElementById('hamburger');
+  l.classList.toggle('open');
+  h.classList.toggle('open');
+}
+</script>
+
+<script>
+function openEnquiry(subject){
+  document.getElementById('enquiry-modal').classList.add('active');
+}
+function closeEnquiry(){
+  document.getElementById('enquiry-modal').classList.remove('active');
+}
+</script>
+
+<script>
+function toggleDropdown(e){
+  e.stopPropagation();
+  const menu = e.currentTarget.closest('.dropdown').querySelector('.dropdown-menu');
+  const arrow = e.currentTarget.querySelector('svg');
+  const isOpen = menu.classList.contains('open');
+  // Close all open dropdowns first
+  document.querySelectorAll('.dropdown-menu.open').forEach(m => m.classList.remove('open'));
+  document.querySelectorAll('.dropdown svg').forEach(a => a.style.transform='rotate(0deg)');
+  if(!isOpen){
+    menu.classList.add('open');
+    arrow.style.transform='rotate(180deg)';
+  }
+}
+document.addEventListener('click', () => {
+  document.querySelectorAll('.dropdown-menu.open').forEach(m => m.classList.remove('open'));
+  document.querySelectorAll('.dropdown svg').forEach(a => a.style.transform='rotate(0deg)');
+});
+</script>
+
+<div class="modal-overlay" id="enquiry-modal" onclick="if(event.target===this)closeEnquiry()">
+  <div class="modal-box">
+    <button class="modal-close" onclick="closeEnquiry()">&times;</button>
+    <h2 class="modal-title">Have a Query? Send Us a Quick Enquiry</h2>
+    <form class="modal-form">
+      <div class="form-group full">
+        <label>Name</label>
+        <input type="text" placeholder="Your full name" required>
+      </div>
+      <div class="form-row">
+        <div class="form-group">
+          <label>Phone Number</label>
+          <input type="tel" placeholder="+1 234 567 8900" required>
+        </div>
+        <div class="form-group">
+          <label>Email</label>
+          <input type="email" placeholder="your@company.com" required>
+        </div>
+      </div>
+      <div class="form-group full">
+        <label>Message</label>
+        <textarea placeholder="Tell us about your product requirement or query..."></textarea>
+      </div>
+      <button type="submit" class="modal-button">Send Enquiry</button>
+    </form>
+  </div>
+</div>
+<script>
+// Highlight active nav link
+document.addEventListener('DOMContentLoaded', function() {
+  const currentPage = window.location.pathname.split('/').pop() || 'home-page.html';
+  const navLinks = document.querySelectorAll('.nav-links a');
+  navLinks.forEach(link => {
+    if (link.getAttribute('href') === currentPage) {
+      link.classList.add('active');
+    }
+  });
+});
+</script>
+<footer class="footer">
+  <div class="footer-grid">
+    <div style="max-width:280px">
+      <div class="f-logo">
+        <img src="assets/logo.jpg" alt="V3 Life Care Exim"/>
+      </div>
+      <p class="f-tagline">Pharmaceutical merchant exporter based in Mumbai, India. We source from WHO-GMP certified manufacturers and handle all regulatory documentation in-house, so your shipments clear faster.</p>
+    </div>
+    <div class="f-col">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="regulatory-services.html">Regulatory Services</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+        <li><a href="privacy-policy.html">Privacy Policy</a></li>
+      </ul>
+    </div>
+    <div class="f-col">
+      <h4>Get in Touch</h4>
+      <div class="f-ci">
+        <svg viewBox="0 0 24 24" style="width:18px;height:18px;stroke:#FFFFFF;fill:none;stroke-width:2;flex-shrink:0"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+        <span>Jeevan Bahar Society, B-14, 2nd Floor, Road No. 3, Chembur, Mumbai - 400071</span>
+      </div>
+      <div class="f-ci">
+        <svg viewBox="0 0 24 24" style="width:18px;height:18px;stroke:#FFFFFF;fill:none;stroke-width:2;flex-shrink:0"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81a19.79 19.79 0 01-3.07-8.67A2 2 0 012 .84h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 8.27a16 16 0 006.82 6.82l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+        <a href="tel:+919833194169" style="text-decoration:none">+91 98331 94169</a>
+      </div>
+      <div class="f-ci">
+        <svg viewBox="0 0 24 24" style="width:18px;height:18px;stroke:#FFFFFF;fill:none;stroke-width:2;flex-shrink:0"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+        <a href="mailto:v3lifecareexim@gmail.com" style="text-decoration:none">v3lifecareexim@gmail.com</a>
+      </div>
+      <div style="margin-top:1.25rem">
+        <p style="font-size:.8rem;font-weight:700;letter-spacing:.07em;text-transform:uppercase;color:#FFFFFF;margin-bottom:.75rem">Follow Us</p>
+        <div style="display:flex;gap:.75rem;align-items:center">
+          <a href="#" aria-label="Facebook" style="width:32px;height:32px;border-radius:50%;background:rgba(255,255,255,.12);display:flex;align-items:center;justify-content:center;transition:background .2s" onmouseover="this.style.background='rgba(255,255,255,.25)'" onmouseout="this.style.background='rgba(255,255,255,.12)'">
+            <svg viewBox="0 0 24 24" style="width:15px;height:15px;fill:#FFFFFF"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
+          </a>
+          <a href="#" aria-label="X" style="width:32px;height:32px;border-radius:50%;background:rgba(255,255,255,.12);display:flex;align-items:center;justify-content:center;transition:background .2s" onmouseover="this.style.background='rgba(255,255,255,.25)'" onmouseout="this.style.background='rgba(255,255,255,.12)'">
+            <svg viewBox="0 0 24 24" style="width:15px;height:15px;fill:#FFFFFF"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.744l7.737-8.835L1.254 2.25H8.08l4.253 5.622 5.91-5.622zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+          </a>
+          <a href="https://wa.me/919833194169" aria-label="WhatsApp" style="width:32px;height:32px;border-radius:50%;background:rgba(255,255,255,.12);display:flex;align-items:center;justify-content:center;transition:background .2s" onmouseover="this.style.background='rgba(255,255,255,.25)'" onmouseout="this.style.background='rgba(255,255,255,.12)'">
+            <svg viewBox="0 0 24 24" style="width:15px;height:15px;fill:#FFFFFF"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.123.554 4.112 1.524 5.84L.057 23.547a.5.5 0 00.608.61l5.801-1.525A11.95 11.95 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.818 9.818 0 01-5.031-1.385l-.36-.214-3.732.979.995-3.638-.235-.374A9.818 9.818 0 012.182 12C2.182 6.57 6.57 2.182 12 2.182c5.43 0 9.818 4.388 9.818 9.818 0 5.43-4.388 9.818-9.818 9.818z"/></svg>
+          </a>
+          <a href="#" aria-label="LinkedIn" style="width:32px;height:32px;border-radius:50%;background:rgba(255,255,255,.12);display:flex;align-items:center;justify-content:center;transition:background .2s" onmouseover="this.style.background='rgba(255,255,255,.25)'" onmouseout="this.style.background='rgba(255,255,255,.12)'">
+            <svg viewBox="0 0 24 24" style="width:15px;height:15px;fill:#FFFFFF"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom" style="border-top:1px solid rgba(255,255,255,.2);padding-top:1.5rem;text-align:center;font-size:.9rem;color:#FFFFFF;margin-top:2rem">All Rights Reserved &copy; 2026 v3lifecareexim.com</div>
+</footer>
+</body>
+</html>

@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<title>Contact V3 Life Care Exim | Pharmaceutical Exporter India</title>
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --navy:#0B3030;--navy-mid:#0E3A3A;--navy-light:#134444;
+  --teal:#1B7878;--teal-dark:#145858;--teal-light:rgba(27,120,120,0.10);
+  --amber:#FFC067;--amber-dark:#F0A040;
+  --white:#FFFFFF;--off-white:#F4FAFA;--pale:#EBF5F5;
+  --lgrey:#D8ECEC;--mgrey:#6B9E9E;--dgrey:#2E5E5E;--text:#1F3A3A;
+  --hf:'Georgia',serif;--bf:system-ui,-apple-system,'Segoe UI',sans-serif;
+}
+html{scroll-behavior:smooth}
+body{font-family:var(--bf);color:var(--text);background:var(--white);line-height:1.6;font-size:16px;overflow-x:hidden;max-width:100vw}
+h1,h2,h3,h4{font-family:var(--hf);line-height:1.2;color:var(--navy)}
+a{text-decoration:none;color:inherit}
+
+/* NAV */
+.nav{position:fixed;top:0;left:0;right:0;z-index:1000;background:rgba(255,255,255,.98);backdrop-filter:blur(8px);border-bottom:1px solid rgba(27,120,120,.12);padding:0 2rem;height:68px;display:flex;align-items:center;justify-content:center;gap:1.5rem;transition:box-shadow .3s}
+.nav.s{box-shadow:0 2px 24px rgba(27,120,120,.15)}
+.nav-logo{display:flex;align-items:center;gap:10px}
+.nav-logo img{height:50px;width:50px;border-radius:6px;object-fit:cover}
+.nav-logo-text{font-family:var(--hf);font-size:.95rem;font-weight:600;color:var(--navy);line-height:1.2}
+.nav-logo-text small{display:block;font-family:var(--bf);font-size:.62rem;font-weight:400;color:var(--teal);letter-spacing:.06em;text-transform:uppercase}
+.nav-links{display:flex;align-items:center;gap:1.75rem;list-style:none}
+.nav-links a{font-size:.95rem;font-weight:700;color:var(--teal-dark);letter-spacing:.04em;transition:color .2s}
+.nav-links a:hover,.nav-links a.active{color:var(--teal)}
+.nav-links a.active{border-bottom:2px solid var(--teal);padding-bottom:2px}
+.nav-cta{background:var(--amber)!important;color:var(--navy)!important;padding:8px 18px!important;border-radius:4px;font-weight:700!important;transition:background .2s!important}
+.nav-cta:hover{background:var(--amber-dark)!important}
+.hamburger{display:none;flex-direction:column;gap:5px;cursor:pointer;padding:4px}
+.hamburger span{display:block;width:24px;height:2px;background:var(--navy);transition:all .3s}
+
+/* PAGE */
+.page-body{padding-top:68px;background:#ffffff;min-height:calc(100vh - 68px)}
+
+/* CONTACT SECTION */
+.contact-section{width:100%;margin:0 auto;padding:4rem 10rem}
+.contact-grid{display:flex;flex-direction:row;align-items:flex-start;min-width:0}
+
+/* LEFT: CONTACT INFO */
+.contact-left{flex:0 0 55%;min-width:0;padding:3rem 3.5rem;background:#fff}
+.contact-left h1{font-size:3.5rem;font-weight:800;margin-bottom:2rem;color:var(--navy)}
+
+.ci-item{display:flex;align-items:flex-start;gap:1.25rem;padding:1.5rem 0;border-bottom:1px solid #e8eeee}
+.ci-item:nth-child(5){border-bottom:none!important}
+.ci-icon{width:44px;height:44px;display:flex;align-items:center;justify-content:center;flex-shrink:0;color:var(--teal)}
+.ci-icon img{width:50px;height:50px;object-fit:contain}
+.ci-body h3{font-size:1.3rem;font-weight:800;color:var(--navy);margin-bottom:.5rem;font-family:var(--bf)}
+.ci-body p{font-size:1.1rem;font-weight:600;color:var(--dgrey);line-height:1.7;margin:0;word-break:break-word;overflow-wrap:break-word}
+.ci-body a{color:var(--teal);transition:color .2s}
+.ci-body a:hover{color:var(--teal-dark)}
+
+/* SOCIAL */
+.social-wrap{margin-top:1rem;padding-top:1rem}
+.social-label{display:flex;align-items:center;gap:1rem;margin-bottom:1.5rem}
+.social-label::before,.social-label::after{content:'';flex:1;height:0.5px;background:var(--teal)}
+.social-label span{font-size:1.1rem;color:#555;white-space:nowrap;font-weight:600}
+.social-icons{display:flex;gap:.75rem;justify-content:center}
+.s-icon{width:44px;height:44px;border-radius:50%;display:flex;align-items:center;justify-content:center;transition:transform .2s,opacity .2s;background:var(--teal)}
+.s-icon:hover{transform:translateY(-2px);opacity:.85}
+.s-icon img{width:24px;height:24px;object-fit:contain;display:block}
+.s-wa img{width:36px;height:36px}
+
+/* RIGHT: FORM */
+.contact-right{flex:0 0 45%;min-width:0;padding:3rem 3.5rem;background:#F5F5F5;overflow:hidden}
+.form-group{margin-bottom:1.5rem;min-width:0}
+.form-group label{display:block;font-size:1rem;font-weight:600;color:var(--text);margin-bottom:.5rem;letter-spacing:.03em;word-break:break-word;overflow-wrap:break-word}
+.form-group input,.form-group textarea{box-sizing:border-box;width:100%;max-width:100%;min-width:0;display:block;padding:12px 14px;border:1px solid #D8ECEC;border-radius:4px;font-family:var(--bf);font-size:1rem;color:var(--text);background:#fff;transition:border-color .2s,box-shadow .2s}
+.form-group input:focus,.form-group textarea:focus{outline:none;border-color:var(--teal);box-shadow:0 0 0 3px rgba(27,120,120,.08)}
+.form-group textarea{resize:vertical;min-height:130px}
+.form-group input::placeholder,.form-group textarea::placeholder{color:#9bb;font-size:.9rem}
+.form-btn{box-sizing:border-box;background:var(--navy);color:#fff;border:none;padding:13px 32px;border-radius:4px;font-size:1rem;font-weight:700;cursor:pointer;letter-spacing:.04em;transition:background .2s;display:inline-flex;align-items:center;gap:.5rem}
+.form-btn:hover{background:var(--teal)}
+
+/* MODAL */
+.modal-overlay{display:none;position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.5);z-index:2000;justify-content:center;align-items:center}
+.modal-overlay.active{display:flex}
+.modal-box{background:#fff;border-radius:8px;padding:2.5rem;width:90%;max-width:600px;position:relative;box-shadow:0 20px 60px rgba(0,0,0,0.3)}
+.modal-close{position:absolute;top:1.5rem;right:1.5rem;background:none;border:none;font-size:1.5rem;color:#333;cursor:pointer;width:40px;height:40px;display:flex;align-items:center;justify-content:center;z-index:9999;pointer-events:auto;padding:0}
+.modal-close:hover{opacity:0.8}
+.modal-title{color:var(--teal);font-size:1.5rem;margin-bottom:1.5rem;font-weight:700}
+.modal-form{display:grid;gap:0.3rem}
+.form-row{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
+.modal-form .form-group{display:flex;flex-direction:column}
+.modal-form .form-group label{color:#111;font-size:0.9rem;margin-bottom:0.5rem;font-weight:600}
+.modal-form .form-group input,.modal-form .form-group textarea{background:#f9f9f9;border:1px solid #ddd;border-radius:4px;padding:0.75rem;font-size:0.95rem;font-family:inherit;color:#111}
+.modal-form .form-group input::placeholder,.modal-form .form-group textarea::placeholder{color:#999}
+.modal-form .form-group textarea{min-height:120px;resize:vertical}
+.modal-form .form-group.full{grid-column:1/-1}
+.modal-button{background:var(--teal);color:#fff;border:none;padding:0.75rem 1.5rem;border-radius:4px;font-weight:700;font-size:0.95rem;cursor:pointer;transition:background 0.2s;width:100%}
+.modal-button:hover{background:var(--teal-dark)}
+
+/* FADE-IN */
+.fade-in{opacity:0;transform:translateY(30px);transition:opacity 0.8s ease-out,transform 0.8s ease-out}
+.fade-in.visible{opacity:1;transform:translateY(0)}
+
+/* MAP SECTION */
+.map-section{width:100%;background:#fff;padding:0;margin-bottom:5rem;overflow:hidden}
+.map-label{max-width:1200px;margin:0 auto;padding:1.5rem 2rem;display:flex;align-items:center;gap:.75rem;font-size:.9rem;color:var(--dgrey);font-weight:500}
+.map-label svg{width:18px;height:18px;stroke:var(--teal);flex-shrink:0}
+.map-wrap{width:100%;line-height:0;position:relative}
+.map-wrap iframe{display:block;width:100%;filter:grayscale(10%)}
+.map-overlay{position:absolute;top:0;left:0;pointer-events:none;padding:16px}
+.map-card{background:#fff;border-radius:6px;box-shadow:0 2px 12px rgba(0,0,0,.25);padding:12px 14px;width:240px;pointer-events:all;font-family:var(--bf)}
+.map-card-company{font-size:.9rem;font-weight:700;color:#1a1a1a;margin-bottom:8px;line-height:1.3}
+.map-card-location{font-size:.8rem;color:#555;line-height:1.6}
+
+/* FOOTER */
+.footer{width:100%;background:#449190;padding:4.5rem 2rem 2rem;border-top:1px solid rgba(255,255,255,.06)}
+.footer-grid{max-width:1100px;margin:0 auto;display:grid;grid-template-columns:1.8fr 1.3fr 1.4fr;gap:3rem;padding-bottom:3rem}
+.f-logo{display:flex;align-items:center;gap:10px;margin-bottom:1rem}
+.f-logo img{height:58px;width:58px;border-radius:5px;object-fit:cover}
+.f-logo-t{font-family:var(--hf);font-size:.9rem;font-weight:600;color:#FFFFFF}
+.f-tagline{font-size:.92rem;color:#FFFFFF;line-height:1.75;margin-bottom:1rem}
+.f-col h4{font-size:.9rem;font-weight:700;letter-spacing:.07em;text-transform:uppercase;margin-bottom:1.25rem;color:#FFFFFF}
+.f-col ul{list-style:none}
+.f-col ul li{margin-bottom:.7rem}
+.f-col a{font-size:.95rem;color:#FFFFFF;transition:color .2s}
+.f-col a:hover{color:var(--amber)}
+.f-ci{display:flex;align-items:flex-start;gap:.75rem;margin-bottom:.9rem;font-size:.92rem;color:#FFFFFF;word-break:break-word;overflow-wrap:break-word}
+.f-ci svg{width:18px;height:18px;flex-shrink:0;stroke:#FFFFFF;fill:none;stroke-width:1.5;margin-top:3px}
+.f-ci a{color:#FFFFFF;transition:color .2s}
+.f-ci a:hover{color:var(--amber)}
+.footer-bottom{max-width:1100px;margin:0 auto;padding-top:1.5rem;text-align:center;font-size:.9rem;color:#FFFFFF}
+.footer-social{display:flex;gap:.75rem;align-items:center;margin-top:1.25rem}
+.footer-social a{width:32px;height:32px;border-radius:50%;background:rgba(255,255,255,.12);display:flex;align-items:center;justify-content:center;transition:background .2s}
+.footer-social a:hover{background:rgba(255,255,255,.25)}
+.footer-social svg{width:15px;height:15px;fill:#FFFFFF}
+
+/* RESPONSIVE — CONTACT STACKING */
+@media(max-width:1024px){
+  .contact-section{padding:3rem 2rem}
+  .contact-grid{flex-direction:column}
+  .contact-left{flex:0 0 auto;width:100%;padding:2rem 2rem}
+  .contact-right{flex:0 0 auto;width:100%;padding:2rem 2rem}
+  .form-btn{width:100%;justify-content:center}
+}
+
+/* RESPONSIVE — NAV AND FOOTER */
+@media(max-width:900px){
+  .nav-links{display:none;position:fixed;top:68px;left:0;right:0;background:rgba(255,255,255,.99);padding:1.5rem 2rem;flex-direction:column;gap:1rem;border-bottom:1px solid rgba(27,120,120,.12);z-index:999}
+  .nav-links.open{display:flex}
+  .hamburger{display:flex}
+  .footer-grid{grid-template-columns:1fr;gap:2rem}
+}
+
+/* RESPONSIVE — MOBILE */
+@media(max-width:600px){
+  .contact-section{padding:2rem 1rem}
+  .contact-left{padding:1.5rem 1rem}
+  .contact-right{padding:1.5rem 1rem}
+  .contact-left h1{font-size:2rem}
+  .ci-body p{font-size:1rem}
+  .ci-body h3{font-size:1.1rem}
+  .form-group input,.form-group textarea{padding:10px 10px}
+  .form-group input::placeholder,.form-group textarea::placeholder{font-size:.85rem}
+  .form-btn{width:100%;justify-content:center}
+  .map-wrap iframe{height:300px}
+  .footer{padding:2.5rem 1rem 1.5rem}
+  .modal-box{padding:1.5rem}
+  .form-row{grid-template-columns:1fr}
+}
+
+@media(max-width:390px){
+  .contact-left h1{font-size:1.7rem}
+  .nav{padding:0 1rem}
+  .form-group input,.form-group textarea{padding:9px 8px}
+  .form-group input::placeholder,.form-group textarea::placeholder{font-size:.8rem}
+}
+</style>
+</head>
+<body>
+
+<nav class="nav" id="nav">
+  <a href="index.html" class="nav-logo">
+    <img src="assets/logo.jpg" alt="V3 Life Care Exim logo"/>
+  </a>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="products.html">Products</a></li>
+    <li><a href="regulatory-services.html">Regulatory Services</a></li>
+    <li><a href="contact.html" class="active">Contact</a></li>
+  </ul>
+  <div class="hamburger" id="hamburger" onclick="toggleMenu()">
+    <span></span><span></span><span></span>
+  </div>
+</nav>
+
+<div class="page-body">
+  <div class="contact-section">
+    <div class="contact-grid">
+
+      <!-- LEFT: CONTACT INFO -->
+      <div class="contact-left fade-in">
+        <h1>Get in touch</h1>
+
+        <div class="ci-item">
+          <div class="ci-icon">
+            <img src="assets/icons/contact/icon-ci-1.png" alt="" aria-hidden="true"/>
+          </div>
+          <div class="ci-body">
+            <h3>Helpdesk Contact</h3>
+            <p><a href="tel:+919833194169">+91 98331 94169</a></p>
+          </div>
+        </div>
+
+        <div class="ci-item">
+          <div class="ci-icon">
+            <img src="assets/icons/contact/icon-ci-2.png" alt="" aria-hidden="true"/>
+          </div>
+          <div class="ci-body">
+            <h3>Office Address</h3>
+            <p>Jeevan Bahar Society, B-14, 2nd Floor,<br>Road No. 3, Chembur, Mumbai - 400071</p>
+          </div>
+        </div>
+
+        <div class="ci-item">
+          <div class="ci-icon">
+            <img src="assets/icons/contact/icon-ci-3.png" alt="" aria-hidden="true"/>
+          </div>
+          <div class="ci-body">
+            <h3>Sales / Enquiries</h3>
+            <p><a href="mailto:v3lifecareexim@gmail.com">v3lifecareexim@gmail.com</a></p>
+          </div>
+        </div>
+
+        <!-- SOCIAL LINKS -->
+        <div class="social-wrap fade-in">
+          <div class="social-label"><span>Stay Connected</span></div>
+          <div class="social-icons">
+            <a href="https://www.facebook.com/amberlifesciences" target="_blank" rel="noopener noreferrer" class="s-icon s-fb" title="Facebook">
+              <img src="assets/icons/contact/icon-social-1.png" alt="Facebook"/>
+            </a>
+            <a href="https://x.com/amberlifesci" target="_blank" rel="noopener noreferrer" class="s-icon s-x" title="X / Twitter">
+              <img src="assets/icons/contact/icon-social-2.webp" alt="X / Twitter"/>
+            </a>
+            <a href="https://wa.me/919833194169" target="_blank" rel="noopener noreferrer" class="s-icon s-wa" title="WhatsApp">
+              <img src="assets/icons/contact/icon-social-3.png" alt="WhatsApp"/>
+            </a>
+            <a href="https://www.linkedin.com/company/v3-life-care-exim" target="_blank" rel="noopener noreferrer" class="s-icon s-li" title="LinkedIn">
+              <img src="assets/icons/contact/icon-social-4.png" alt="LinkedIn"/>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- RIGHT: FORM -->
+      <div class="contact-right fade-in">
+        <form id="contactForm">
+          <div class="form-group">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="name" required placeholder="Enter Your Name">
+          </div>
+          <div class="form-group">
+            <label for="company">Company Name</label>
+            <input type="text" id="company" name="company" required placeholder="Enter Your Company Name">
+          </div>
+          <div class="form-group">
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone" required placeholder="Enter Your Phone Number">
+          </div>
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" required placeholder="Enter Your Email Address">
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" required placeholder="Write Your Message Here"></textarea>
+          </div>
+          <button type="submit" class="form-btn">Submit</button>
+        </form>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- MAP SECTION -->
+<div class="map-section">
+  <div class="map-wrap">
+    <iframe
+      src="https://maps.google.com/maps?q=Jeevan+Bahar+Society+B14+Road+No+3+Chembur+Mumbai+400071&output=embed&z=16"
+      width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade" title="V3 Life Care Exim Office Location">
+    </iframe>
+  </div>
+</div>
+
+<footer class="footer">
+  <div class="footer-grid">
+    <div style="max-width:280px">
+      <div class="f-logo">
+        <img src="assets/logo.jpg" alt="V3 Life Care Exim"/>
+        <span class="f-logo-t">V3 Life Care Exim</span>
+      </div>
+      <p class="f-tagline">Pharmaceutical merchant exporter based in Mumbai, India. We source from WHO-GMP certified manufacturers and handle all regulatory documentation in-house, so your shipments clear faster.</p>
+    </div>
+    <div class="f-col">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="regulatory-services.html">Regulatory Services</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+        <li><a href="privacy-policy.html">Privacy Policy</a></li>
+      </ul>
+    </div>
+    <div class="f-col">
+      <h4>Get in Touch</h4>
+      <div class="f-ci">
+        <svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+        <span>Jeevan Bahar Society, B-14, 2nd Floor, Road No. 3, Chembur, Mumbai - 400071</span>
+      </div>
+      <div class="f-ci">
+        <svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81a19.79 19.79 0 01-3.07-8.67A2 2 0 012 .84h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 8.27a16 16 0 006.82 6.82l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+        <a href="tel:+919833194169">+91 98331 94169</a>
+      </div>
+      <div class="f-ci">
+        <svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+        <a href="mailto:v3lifecareexim@gmail.com">v3lifecareexim@gmail.com</a>
+      </div>
+      <p style="font-size:.8rem;font-weight:700;letter-spacing:.07em;text-transform:uppercase;color:#FFFFFF;margin-top:1.25rem;margin-bottom:.75rem">Follow Us</p>
+      <div class="footer-social">
+        <a href="#" aria-label="Facebook">
+          <svg viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
+        </a>
+        <a href="#" aria-label="X / Twitter">
+          <svg viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.744l7.737-8.835L1.254 2.25H8.08l4.253 5.622 5.91-5.622zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+        </a>
+        <a href="https://wa.me/919833194169" aria-label="WhatsApp">
+          <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.123.554 4.112 1.524 5.84L.057 23.547a.5.5 0 00.608.61l5.801-1.525A11.95 11.95 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.818 9.818 0 01-5.031-1.385l-.36-.214-3.732.979.995-3.638-.235-.374A9.818 9.818 0 012.182 12C2.182 6.57 6.57 2.182 12 2.182c5.43 0 9.818 4.388 9.818 9.818 0 5.43-4.388 9.818-9.818 9.818z"/></svg>
+        </a>
+        <a href="https://www.linkedin.com/company/v3-life-care-exim" aria-label="LinkedIn">
+          <svg viewBox="0 0 24 24"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom" style="border-top:1px solid rgba(255,255,255,.2);margin-top:2rem">All Rights Reserved &copy; 2026 v3lifecareexim.com</div>
+</footer>
+
+<!-- ENQUIRY MODAL -->
+<div class="modal-overlay" id="enquiry-modal" onclick="if(event.target===this)closeEnquiry()">
+  <div class="modal-box">
+    <button class="modal-close" onclick="closeEnquiry()">&times;</button>
+    <h2 class="modal-title">Have a Query? Send Us a Quick Enquiry</h2>
+    <form class="modal-form">
+      <div class="form-group full">
+        <label>Name</label>
+        <input type="text" placeholder="Your full name" required>
+      </div>
+      <div class="form-row">
+        <div class="form-group">
+          <label>Phone Number</label>
+          <input type="tel" placeholder="+1 234 567 8900" required>
+        </div>
+        <div class="form-group">
+          <label>Email</label>
+          <input type="email" placeholder="your@company.com" required>
+        </div>
+      </div>
+      <div class="form-group full">
+        <label>Message</label>
+        <textarea placeholder="Tell us about your product requirement or query..."></textarea>
+      </div>
+      <button type="submit" class="modal-button">Send Enquiry</button>
+    </form>
+  </div>
+</div>
+
+<script>
+window.addEventListener('scroll',function(){
+  document.getElementById('nav').classList.toggle('s',window.scrollY>20);
+});
+
+function toggleMenu(){
+  document.getElementById('navLinks').classList.toggle('open');
+}
+
+function openEnquiry(){
+  document.getElementById('enquiry-modal').classList.add('active');
+}
+function closeEnquiry(){
+  document.getElementById('enquiry-modal').classList.remove('active');
+}
+
+const observer=new IntersectionObserver(function(entries){
+  entries.forEach(function(e){if(e.isIntersecting){e.target.classList.add('visible');observer.unobserve(e.target);}});
+},{threshold:0.15});
+document.querySelectorAll('.fade-in').forEach(function(el){observer.observe(el);});
+
+document.addEventListener('DOMContentLoaded',function(){
+  const cur=window.location.pathname.split('/').pop()||'index.html';
+  document.querySelectorAll('.nav-links a').forEach(function(link){
+    if(link.getAttribute('href')===cur)link.classList.add('active');
+  });
+});
+</script>
+</body>
+</html>
